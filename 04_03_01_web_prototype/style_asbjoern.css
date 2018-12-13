@@ -1,0 +1,246 @@
+/*TABLE SKEMA!!!*/
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+
+
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #FEFEFE;
+
+
+}
+
+td {
+	padding: 1.5rem;
+	padding-right: 4.5rem;
+	text-align: center;
+}
+
+
+
+.uranus {
+	background-color: #69596a;
+	color: white;
+}
+
+.uranus:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.merkur:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.spaceship:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.dropdown:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.merkur {
+	background-color: #ea5045;
+	color: white;
+}
+
+.spaceship {
+	background-color: #4c374b;
+	color: white;
+}
+
+.oversigt_skema {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 1rem;
+	font-weight: 50;
+	text-align: center;
+
+}
+
+
+
+.oversigt_skema th {
+	border: 1px solid white;
+	text-align: center;
+}
+
+
+
+/*TABLE SKEMA SLUT*/
+
+/*---------------------------------------------------
+5: Page specific styles
+---------------------------------------------------*/
+/*Login page
+.loginpage {}
+
+
+
+
+
+/*SKEMA*/
+
+#kalender {
+	position: static;
+	float: right;
+	width: 3rem;
+	height: 0.8rem;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-bottom: 3rem;
+	background-image: url(Billeder/kal.svg);
+
+}
+
+.dropbtn {
+	background-color: #4c374b;
+	color: white;
+	padding-right: 3.33rem;
+	padding-left: 1.3rem;
+
+	/*    padding-right: 4.5rem;*/
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-bottom: 1px solid #FEFEFE;
+	width: 500px;
+	overflow: hidden;
+
+}
+
+
+
+.dropdown {
+	position: relative;
+	/*    display: inline-block;*/
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/*    background-color: #f1f1f1;*/
+	width: 100vw;
+	/*    overflow: auto;*/
+	/*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+	z-index: 1;
+}
+
+
+
+
+
+.modul_info {
+	padding: 0;
+	padding-right: 0rem;
+	width: 100vw;
+
+
+}
+
+.show {
+	display: block;
+
+}
+
+
+
+/*.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: url(Billeder/SVG/modul_info.svg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+
+
+/*UGE SKEMA */
+
+.uge {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 2rem;
+	font-weight: 50;
+	text-align: center;
+}
+
+.ugenr {
+	width: 25%;
+	height: 25%;
+	top: 5;
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 2rem;
+	font-weight: 50;
+	text-align: center;
+	margin-left: 38vw;
+}
+
+.uge_skema {
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+.pil_1 {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/pil_1.svg);
+	width: 8%;
+	height: 10%;
+	overflow: hidden;
+	bottom: 139vw;
+	left: 31vw;
+}
+
+.pil_2 {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/pil_2.svg);
+	width: 8%;
+	height: 10%;
+	overflow: hidden;
+	bottom: 139vw;
+	left: 61vw;
+}
+
+.tilbage_skema {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/tilbage_skema.svg);
+	width: 10vw;
+	height: 10vw;
+	overflow: hidden;
+	bottom: 150vw;
+	left: 84vw;
+}

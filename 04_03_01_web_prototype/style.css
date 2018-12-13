@@ -1,0 +1,1430 @@
+/*---------------------------------------------------
+1: Variables & Common styling
+2: Layout / Grid
+3: Form styling
+4: Table styles
+5: Page specific styles
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+1: Variables & Common styling
+---------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: linear-gradient(225deg, rgba(235, 132, 125, 1), rgba(245, 141, 128, 0.98), rgba(247, 157, 148, 0.98), rgba(247, 162, 155, 0.8), rgba(254, 180, 169, 0.93));
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	font-family: arial;
+}
+
+
+body {
+	margin: 0;
+}
+
+h1 {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+}
+
+h2 {
+
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 1.5rem;
+	font-weight: 50;
+	text-align: center;
+
+}
+
+
+p {
+	font-family: Arial;
+	color: var(--color-tekst);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/*Variables*/
+:root {
+	--color-knap: #FEFEFE;
+	--color-input: #FEFEFE;
+	--color-tekst: #3F3140;
+	--color-baggrund-title: #F2968F;
+	--color-header-nav: rgba(106, 89, 107, 0.76);
+	--color-menu: linear-gradient(#6A596B, #352D36);
+	--color-menu-accent: #3F3140;
+	font-family: Arial;
+
+}
+
+/*Common styling classes*/
+.rounded {
+	border-radius: 5px;
+}
+
+/*---------------------------------------------------
+2: Layout / Grid
+---------------------------------------------------*/
+/* Grid container
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: var(--color-light);
+}
+
+.afleveringerpage .container {
+    justify-items: left;
+}
+
+Grid column items
+.frontervskeatitle {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+loginpage
+.loginform {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.huskmig {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.glemtpassword {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+loginpage grid
+.formgroup {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    grid-gap: 15px;
+}
+
+.formgroup label {
+    grid-column-start: 1;
+}
+
+.formgroup input {
+    grid-column-start: 2;
+}
+
+.formgroup,
+.glemtpassword {
+    margin-bottom: 1.5em;
+}
+
+afleveringer page
+.afleveringer {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+---------------------------------------------------
+3: Form styling
+---------------------------------------------------
+Inputs
+
+label,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit] {
+    padding: 1em;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid black;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border: 3px solid #ff9900;
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+
+input[type=submit]:hover {
+    color: black;
+    background-color: #f90;
+}
+
+---------------------------------------------------
+4: Table styles
+---------------------------------------------------
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+td {
+    border: 1px dashed var(--color-accent);
+}
+ */
+
+
+
+
+/*---------------------------------------------------
+FORSIDE
+----------------------------------------------------*/
+.forsidelogo {
+	background-image: url(billeder/forsidelogo.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 96vw;
+	margin-left: 2vw;
+	margin-top: 2vh;
+	margin-bottom: 3em;
+	height: 35vh;
+}
+
+.unilogin {
+	background-image: url(billeder/UNIlogin.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 6.5vh;
+	margin-left: 5.3em;
+}
+
+.formgroup,
+.glemtpassword,
+.unilogin {
+	margin: 0.5em 0 1em 5.5em;
+
+}
+
+.logind {
+	background-image: url(billeder/logind.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 20vw;
+	height: 20vw;
+	margin: 3em 0 0 17em;
+}
+
+.huskmig {
+	margin: 0 0 0 5.5em
+}
+
+.container_rounded {
+	margin-left: 1em;
+}
+
+/***INPUTS***/
+label,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit] {
+	padding: 1em;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+	border: 3px solid #76606F;
+}
+
+input[type=submit] {
+	background-color: #352D36;
+	color: white;
+	transition: background-color 1s, color 1s;
+}
+
+input[type=submit]:hover {
+	color: black;
+	background-color: #76606F;
+}
+
+
+/****************UNI LOGIN SIDE******************/
+
+.unibillede {
+	background-image: url(billeder/image2_56.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 80vw;
+	height: 74vw;
+	margin-left: 2.4em;
+	border-radius: 5%;
+}
+
+.tilbage {
+	position: absolute;
+	margin-left: 3em;
+	font-size: 125%;
+	text-decoration: underline;
+	margin-top: 0.88em;
+}
+
+.tilbageknap {
+	background-image: url(billeder/Forward%20arrow.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 10vw;
+	height: 10vw;
+	margin-left: 0.5em;
+	margin-top: 2em;
+}
+
+
+/********************GLEMT ADGANGSKODE SIDE**************/
+
+.glemtAdgangskode {
+	margin: 1em 1.5em 0;
+	font-size: 1.3em;
+	color: white;
+}
+
+.glemtAdgangskodetekst {
+	margin: 0em 2em;
+}
+
+.inputBoks {
+	margin-left: 2em;
+}
+
+.inputBoks input {
+	width: 75vw;
+}
+
+.tilbageGlemt {
+	position: absolute;
+	margin-left: 3em;
+	font-size: 125%;
+	margin-top: 4em;
+}
+
+.tilbageGlemt p {
+	color: white;
+}
+
+.tilbageKnapGlemt {
+	background-image: url(billeder/Forward%20arrow.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 5vw;
+	height: 5vw;
+	margin-left: 2em;
+	margin-top: 6.2em;
+}
+
+.sendSMS {
+	background-image: url(billeder/sendsms.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 35vw;
+	height: 12vw;
+	margin: 1em 0 0 13.4em;
+}
+
+/*****************************MENU*********************/
+
+.topBarFill {
+	height: 8vh;
+	width: 100vw;
+	display: block;
+	overflow: hidden;
+}
+
+/* TOP BAR */
+.topBar {
+	position: fixed;
+	top: 0px;
+	height: 8vh;
+	width: 100vw;
+	background-image: linear-gradient(225deg, rgba(106, 89, 107, 1), rgba(113, 101, 113, 0.8), rgba(137, 130, 137, 0.5));
+	overflow: hidden;
+}
+
+#keaLogo {
+	background-image: url(billeder/kealogo.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: fixed;
+	width: 30vw;
+	height: 8vh;
+	top: -0.2em;
+	margin-left: 7.9em;
+}
+
+#hamburger {
+	background-image: url(billeder/Menu.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 8vw;
+	height: 5vh;
+	margin: 0.6em 0 1em 0.5em;
+}
+
+
+#searchFunction {
+	position: fixed;
+	top: 0.6em;
+	right: 0.5em;
+	height: 5vh;
+	width: 7vw;
+	background-image: url(billeder/Path%2099.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.underboks {
+	display: flex;
+	background-color: #3F3140;
+	position: fixed;
+	width: 100vw;
+	height: 16vh;
+	z-index: 1;
+}
+
+#avatar {
+	background-image: url(billeder/avatar.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 15vw;
+	height: 10vh;
+	margin-top: 1.2em;
+	margin-left: 5.5em;
+}
+
+#oplysninger {
+	margin: 3vh 2vw;
+	height: 10vh;
+	color: white;
+	font-size: 0.7em;
+
+}
+
+/**stjerne betyder alt inde i det valgte ID**/
+
+#oplysninger * {
+	padding-top: 0.4em;
+}
+
+.menuScreen {
+	position: absolute;
+	background-image: linear-gradient(300deg, rgba(106, 89, 107, 1), rgba(113, 101, 113, 0.8), rgba(137, 130, 137, 0.5));
+	height: 92vh;
+	width: 100vw;
+}
+
+#fillerMenu {
+	height: 6.5vh;
+}
+
+.menuItem {
+	text-align: center;
+	margin-top: 6.5vh;
+	font-size: 1.1em;
+	padding-top: 0.4em;
+	line-height: 1.5;
+	margin-left: 1em;
+}
+
+.skema {
+	background-image: url(billeder/ic_event_note_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.afleveringer {
+	background-image: url(billeder/ic_create_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.materialer {
+	background-image: url(billeder/ic_folder_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.chat {
+	background-image: url(billeder/ic_message_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.indstillinger {
+	background-image: url(billeder/ic_brightness_low_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.logud {
+	background-image: url(billeder/ic_cancel_24px.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 5vh;
+	width: 7vw;
+	margin-left: 3em;
+	position: absolute;
+}
+
+.tilbage_chat {
+	background-image: url(billeder/Forward%20arrow.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 5vw;
+	height: 5vw;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+/************************KONTAKTER***********************/
+
+.search {
+	background-image: url(billeder/search.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 98vw;
+	height: 4vh;
+	margin-left: 0.25em;
+	margin-top: 0.5em;
+}
+
+.searchIcon {
+	background-image: url(billeder/Path%2099.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 4vw;
+	height: 3vh;
+	margin-left: 0.3em;
+	position: absolute;
+	margin-top: 0.25em;
+}
+
+.chatTekst {
+	margin-left: 6em;
+	margin-top: 0.5em;
+}
+
+.samtaleTekst {
+	position: absolute;
+	margin-left: -3em;
+	color: #3F3140;
+}
+
+.kontaktTekst {
+	position: absolute;
+	margin-left: 8em;
+	color: white;
+
+}
+
+.samtaleTekstOmvendt {
+	position: absolute;
+	margin-left: -3em;
+}
+
+.kontaktTekstOmvendt {
+	position: absolute;
+	margin-left: 8em;
+	color: #3F3140;
+
+}
+
+.break {
+	width: 98vw;
+	margin-left: 0.2em;
+	margin-top: 2em;
+}
+
+.kontaktSiden hr {
+	width: 81vw;
+	border: 0.5px solid #3F3140;
+}
+
+.kontaktSiden {
+	margin-top: 2.5em;
+}
+
+.kontakt {
+	color: white;
+	margin-left: 1.5em;
+
+}
+
+.kontaktCirkel {
+	margin-left: 0.5rem;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #3F3140;
+	border-radius: 25px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: white;
+}
+
+.kontaktNavn {
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
+.forbogstav.firstLetter {
+	margin-top: 0.1em;
+	margin-left: 9rem;
+	color: white;
+	font-family: arial;
+	font-size: 1.2rem;
+}
+
+.forbogstav {
+	position: absolute;
+	font-size: 1.5em;
+	display: flex;
+	margin-top: -1em;
+	margin-left: 0.6em;
+	color: #3F3140;
+}
+
+hr {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.seneste_samtale {
+	color: white;
+	font-family: arial;
+	cursor: pointer;
+	margin-left: 9em;
+	width: 100%;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-size: 12px;
+}
+
+.samtale_ikon1 {
+	width: 5%;
+	position: absolute;
+	margin-left: 5.4em;
+	bottom: 27.5rem;
+}
+
+.samtale_ikon2 {
+	width: 5%;
+	position: absolute;
+	margin-left: 5.4em;
+	bottom: 22rem;
+}
+
+.samtale_ikon3 {
+	width: 5%;
+	position: absolute;
+	margin-left: 5.4em;
+	bottom: 16.4rem;
+}
+
+.samtale_ikon4 {
+	width: 5%;
+	position: absolute;
+	margin-left: 5.4em;
+	bottom: 10.8rem;
+}
+
+.samtale_ikon5 {
+	width: 5%;
+	position: absolute;
+	margin-left: 5.4em;
+	bottom: 5.2rem;
+}
+
+
+
+
+/*---------------------------------------------------
+5: Page specific styles
+---------------------------------------------------*/
+/*CHAT SIDE , MARIA*/
+
+
+#chat_afsender {
+	position: relative;
+	display: flex;
+	flex-basis: 400px;
+	flex-wrap: wrap;
+	height: 83vh;
+
+}
+
+#header_chat {
+	flex-wrap: nowrap;
+}
+
+
+#chat_afsender img {
+	width: 3rem;
+	margin-left: 10rem;
+	padding-top: 0.5rem;
+}
+
+#header_chat p {
+	font-size: 1.5rem;
+	margin: auto 0;
+	padding-top: 0.5rem;
+	padding-left: 6.5rem;
+}
+
+.besked1 {
+	display: flex;
+
+}
+
+#tekstboxikon1 p {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--color-knap);
+	width: 3rem;
+	height: 3rem;
+	border-radius: 5rem;
+	padding: 1rem;
+	margin-left: 0.2rem;
+	font-weight: bold;
+
+}
+
+#tekstbox1 p {
+	font-size: 1rem;
+	background-color: white;
+	padding: 1.2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.3rem;
+	border-radius: 0.7rem;
+
+}
+
+.besked2 {
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+#tekstboxikon2 p {
+	background-color: #69596A;
+	color: white;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 5rem;
+	padding: 1rem;
+	margin-right: 0.2rem;
+	font-weight: bold;
+
+}
+
+#tekstbox2 p {
+	font-size: 1rem;
+	background-color: #69596A;
+	color: white;
+	padding: 1rem;
+	margin-left: 3.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.7rem;
+
+}
+
+.besked3 {
+	display: flex;
+
+}
+
+#tekstboxikon3 p {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--color-knap);
+	width: 3rem;
+	height: 3rem;
+	border-radius: 5rem;
+	padding: 1rem;
+	margin-left: 0.2rem;
+	font-weight: bold;
+
+}
+
+#tekstbox3 p {
+	font-size: 1rem;
+	background-color: white;
+	padding: 1rem;
+	padding-right: 0.5rem;
+	margin-left: 0.5rem;
+	border-radius: 0.7rem;
+	margin-right: 0.3rem;
+
+}
+
+#ny_besked {
+	height: 11rem;
+}
+
+#skriv_her {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#skriv_her img {
+	width: 2rem;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	margin-right: 0.3rem;
+}
+
+
+#skriv_her input[type=text] {
+	padding: 1rem;
+	outline: -webkit-focus-ring-color auto 0;
+	width: 15rem;
+	margin-left: 1rem;
+	margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+	border: 1px solid #69596A;
+}
+
+
+
+*/
+
+/*Login page*/
+.loginpage {}
+
+
+/*---------------------------------- Materialer (Sofia) ---------------------------------------------------*/
+
+
+h1 {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 50;
+	text-align: center;
+}
+
+.header_materialer {
+	background-color: var(--color-baggrund-title);
+	color: #ffffff;
+	padding: 1px;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion1 {
+	background-color: #ffffff;
+	color: var(--color-tekst);
+	font-family: arial;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	margin-bottom: 1px;
+}
+
+.accordion2 {
+	background-color: #ffffff;
+	color: var(--color-tekst);
+	font-family: arial;
+	cursor: pointer;
+	padding: 9px;
+	padding-left: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-size: 12px;
+}
+
+.accordion3 {
+	background-color: #ffffff;
+	color: var(--color-tekst);
+	font-family: arial;
+	cursor: pointer;
+	padding: 9px;
+	padding-left: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-size: 12px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.accordion1:hover,
+.accordion1.active {
+	background-color: #ffffff;
+	color: var(--color-tekst);
+}
+
+.accordion2:hover,
+.accordion2.active {
+	background-color: var(--color-tekst);
+	color: #ffffff;
+}
+
+.accordion3:hover,
+.accordion3.active {
+	background-color: #AC8388;
+	color: #ffffff;
+}
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel1 {
+	padding: 0px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+
+.panel2 {
+	padding: 0px;
+	background-color: #FBD5D2;
+	display: none;
+	overflow: hidden;
+
+}
+
+.panel3 {
+	text-align: left;
+	background-color: #FBD5D2;
+	color: var(--color-tekst);
+	display: none;
+	overflow: hidden;
+	font-family: arial;
+	font-size: 12px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 5em;
+	padding-top: 5 0em;
+}
+
+
+ul img {
+	width: 19px;
+	padding-right: 0.5em;
+}
+
+li {
+	padding: 0.5em;
+}
+
+.accordion3 img {
+	width: 25px;
+	position: relative;
+	padding-right: 0.5em;
+	float: left;
+}
+
+.accordion2 img {
+	width: 30px;
+	position: relative;
+	top: 1px;
+	padding-right: 0.8em;
+	float: left;
+}
+
+
+/*Åbne & Lukke-ikoner*/
+
+
+.accordion:after {
+	content: '\02795';
+	/* Unicode character for "plus" sign (+) */
+	font-size: 5px;
+	float: right;
+	margin-left: 5px;
+}
+
+.accordion.active:after {
+	content: "\2796";
+	/* Unicode character for "minus" sign (-) */
+}
+
+.accordion2:after {
+	content: '\02795';
+	/* Unicode character for "plus" sign (+) */
+	font-size: 5px;
+	color: #777;
+	float: right;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.accordion2.active:after {
+	content: "\2796";
+	color: #ffffff;
+	/* Unicode character for "minus" sign (-) */
+}
+
+.accordion3:after {
+	content: '\02795';
+	/* Unicode character for "plus" sign (+) */
+	font-size: 5px;
+	color: #777;
+	float: right;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.accordion3.active:after {
+	content: "\2796";
+	/* Unicode character for "minus" sign (-) */
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------
+Afleveringer
+---------------------------------------------------*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion0 {
+	background-color: #ffff;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: 0 1 0 0;
+	outline: none;
+	transition: 0.4s;
+	margin-bottom: 2px;
+	;
+}
+
+.accordion0 {
+	background-color: #ffffff;
+	color: var(--color-tekst);
+	font-family: arial;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	margin-bottom: 1px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion0:hover {
+	background-color: #FEFEFE;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel0 {
+	padding: 0 18px;
+	background-color: rgba(255, 254, 254, 0.43);
+	display: none;
+	overflow: hidden;
+}
+
+.panel0 p {
+	color: var(--color-tekst);
+	font-family: arial;
+	cursor: pointer;
+	padding: 9px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-size: 12px;
+}
+
+button img {
+	width: 4%;
+	float: right;
+}
+
+.panel0 img {
+	width: 6%;
+	margin-right: 15px;
+}
+
+.lock_ikon {
+	width: 4%;
+	margin-left: 55px;
+}
+
+.lock_ikon3 {
+	width: 4%;
+	margin-left: 13px;
+}
+
+.cross_ikon {
+	width: 4%;
+	margin-left: 6px;
+}
+
+.comment.ikon {
+	width: 4%;
+	margin-left: 50px;
+}
+
+.accordion0:after {
+	content: '\02795';
+	/* Unicode character for "plus" sign (+) */
+	font-size: 5px;
+	float: right;
+	margin-left: 5px;
+}
+
+.accordion0.active:after {
+	content: "\2796";
+	/* Unicode character for "minus" sign (-) */
+}
+
+
+
+/*---------------------------------------------------
+Feedback
+---------------------------------------------------*/
+
+.section {
+	background-color: #FEFEFE;
+	text-align: center;
+	color: black;
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 2px;
+	margin-left: none;
+}
+
+.section img {
+	width: 3%;
+	margin-right: 2px;
+}
+
+
+
+/*TABLE SKEMA!!!*/
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+
+
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #FEFEFE;
+
+
+}
+
+td {
+	padding: 1.5rem;
+	padding-right: 4.5rem;
+	text-align: center;
+}
+
+
+
+.uranus {
+	background-color: #69596a;
+	color: white;
+}
+
+.uranus:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.merkur:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.spaceship:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.dropdown:hover {
+	/*    background-color: #ffb500;*/
+	cursor: pointer;
+}
+
+.merkur {
+	background-color: #ea5045;
+	color: white;
+}
+
+.spaceship {
+	background-color: #4c374b;
+	color: white;
+}
+
+.oversigt_skema {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 1rem;
+	font-weight: 50;
+	text-align: center;
+
+}
+
+
+
+.oversigt_skema th {
+	border: 1px solid white;
+	text-align: center;
+}
+
+
+
+/*TABLE SKEMA SLUT*/
+
+/*---------------------------------------------------
+5: Page specific styles
+---------------------------------------------------*/
+/*Login page
+.loginpage {}
+
+
+
+
+
+/*SKEMA*/
+
+#kalender {
+	position: static;
+	float: right;
+	width: 3rem;
+	height: 0.8rem;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-bottom: 3rem;
+	background-image: url(Billeder/kal.svg);
+
+}
+
+.dropbtn {
+	background-color: #4c374b;
+	color: white;
+	padding-right: 3.33rem;
+	padding-left: 1.3rem;
+
+	/*    padding-right: 4.5rem;*/
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-bottom: 1px solid #FEFEFE;
+	width: 500px;
+	overflow: hidden;
+
+}
+
+
+
+.dropdown {
+	position: relative;
+	/*    display: inline-block;*/
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/*    background-color: #f1f1f1;*/
+	width: 100vw;
+	/*    overflow: auto;*/
+	/*    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+	z-index: 1;
+}
+
+
+
+
+
+.modul_info {
+	padding: 0;
+	padding-right: 0rem;
+	width: 100vw;
+
+
+}
+
+.show {
+	display: block;
+
+}
+
+
+
+/*.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: url(Billeder/SVG/modul_info.svg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+
+
+/*UGE SKEMA */
+
+.uge {
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 2rem;
+	font-weight: 50;
+	text-align: center;
+}
+
+.ugenr {
+	width: 25%;
+	height: 25%;
+	top: 5;
+	color: #FEFEFE;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-size: 2rem;
+	font-weight: 50;
+	text-align: center;
+	margin-left: 38vw;
+}
+
+.uge_skema {
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+.pil_1 {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/pil_1.svg);
+	width: 8%;
+	height: 10%;
+	overflow: hidden;
+	bottom: 139vw;
+	left: 31vw;
+}
+
+.pil_2 {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/pil_2.svg);
+	width: 8%;
+	height: 10%;
+	overflow: hidden;
+	bottom: 139vw;
+	left: 61vw;
+}
+
+.tilbage_skema {
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(billeder/SVG/tilbage_skema.svg);
+	width: 10vw;
+	height: 10vw;
+	overflow: hidden;
+	bottom: 150vw;
+	left: 84vw;
+}
